@@ -3,9 +3,9 @@ import os
 import requests
 
 # Dev api info
-GD_API = os.getenv('GD_API')
-GD_KEY = os.getenv('GD_KEY')
-GD_SECRET = os.getenv('GD_SECRET')
+GD_API = os.getenv('GDAPI_URL')
+GD_KEY = os.getenv('GDAPI_ACCESS_KEY')
+GD_SECRET = os.getenv('GDAPI_SECRET_KEY')
 # Api environment
 DEVELOPMENT_MODE = os.getenv('DEVELOPMENT_MODE')
 

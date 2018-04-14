@@ -15,21 +15,6 @@ class Pydaddy():
     def _init__(self):
         pass
 
-def build_headers(json=None):
- '''builds request headers'''
- headers = {
-   'Authorization': f'sso-key {GD_KEY}:{GD_SECRET}',
-   'Accept': 'application/json'
- }
- if json:
-     headers.update({'Content-Type': 'application/json'})
- return headers
-
-
-def build_url(endpoint, **args):
- '''build url for api requests'''
- return GD_API + endpoint.format(**args)
-
 
 def raise_for_rate_limit(api_response):
  '''checks if response status_code is 429

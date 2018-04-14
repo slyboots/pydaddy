@@ -1,9 +1,11 @@
 import requests
-from .app import build_headers, build_url
 
 # api endpoints
-GD_ENDPOINTS = {
- 'DOMAIN_AVAILABLE': '/domains/available?domain={domain}'
+ACTIONS = {
+    'DOMAIN_AVAILABLE': {
+        'url': '/domains/available?domain={domain}',
+        'method': 'GET'
+    }
 }
 
 def get_domain_available(domain):
